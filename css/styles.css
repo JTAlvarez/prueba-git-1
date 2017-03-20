@@ -1,0 +1,163 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	background-image: url(../images/bg-body.png);
+	background-attachment: fixed;
+}
+
+img{
+	width: 100%;
+}
+
+ul, ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width: 95%;
+	margin: auto;
+}
+
+.logo{
+	border-radius: 50%;
+	border: solid 1px #222;
+	margin: 30px auto;
+	display: block;
+	box-shadow: 0 0 5px #000000;
+	max-width: 140px;
+}
+
+.toggle-nav{
+	background-color: #333;
+	display: block;
+	width: 45px;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 auto 20px;
+}
+
+.ion-navicon-round{
+	color: #fff;
+	font-size: 25px;
+}
+
+.main-nav a{
+	display: block;
+	background-color: #333;
+	color: #fff;
+	font-size: 1.5em;
+	border-bottom: 1px solid #222;
+	border-top: 1px solid #ccc;
+	padding: 15px;
+	border-radius: 8px;
+}
+
+.main-nav ul{
+	display: none;
+}
+
+/*.main-nav:hover ul{
+	display: block;
+}*/
+
+.banner{
+	display: none;
+}
+
+.product{
+	margin-bottom: 15px;
+}
+
+.product a{
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+}
+
+.main-footer{
+	background-color: #f00;
+	border-radius: 20px 20px 0 0;
+}
+
+.main-footer a{
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	padding: 1em;
+	text-align: center;
+	border-bottom: solid 1px #fff;
+}
+
+
+/* media queria tablet*/
+@media (min-width: 640px) {
+	.container{
+		width: 100%;
+		max-width: 1200px;
+	}
+	.toggle-nav{
+		display: none;
+	}
+	.main-nav ul{
+		display: block !important;
+		overflow: hidden;
+	}
+	.main-nav li{
+		float: left;
+		width: 15%;
+		font-size: 0.6em;
+		text-align: center;
+		margin: 0 0.83%;
+	}
+	.banner{
+		display: block;
+		margin: 30px 0.83%;
+	}
+	.vip-products{
+		overflow: hidden;
+	}
+	.product{
+		float: left;
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+		width: 48.33%;
+	}
+}
+
+
+@media (min-width: 960px) {
+	.product{
+		width: 31.67%;
+		/*por que son 3 cajas y cada una tiene margen derecho e izquierda de 0.83  */
+	}
+	.main-footer{
+		padding: 20px 0;
+	}
+	.main-footer ul{
+		text-align: center;
+	}
+	.main-footer li{
+		display: inline-block;
+	}
+	.main-footer a{
+		border: none;
+		border-right: solid 1px rgba(255,255,255,0.8);
+	}
+	.main-footer li:last-child a{
+		border-right: none;
+	}
+}
